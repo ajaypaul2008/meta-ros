@@ -11,6 +11,9 @@ SRC_URI += "file://0002-Disable-compiling-demos-extras-tests.patch"
 
 S = "${WORKDIR}/bullet3-2.87"
 
+FILES_${PN} += "${libdir}/*"
+FILES_${PN}-dev = "${libdir}/* ${includedir}"
+
 inherit cmake pythonnative
 
 EXTRA_OECMAKE = "-DBUILD_PYBULLET=OFF"
