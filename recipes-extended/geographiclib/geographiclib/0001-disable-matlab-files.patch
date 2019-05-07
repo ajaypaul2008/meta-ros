@@ -1,0 +1,25 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 5aabbfb..d98b31c 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -465,7 +465,7 @@ add_subdirectory (tools)
+ add_subdirectory (man)
+ add_subdirectory (doc)
+ add_subdirectory (js)
+-add_subdirectory (matlab)
++# add_subdirectory (matlab)
+ add_subdirectory (python/geographiclib)
+ add_subdirectory (examples)
+ if (MSVC AND BUILD_NETGEOGRAPHICLIB)
+@@ -515,8 +515,8 @@ set (CPACK_SOURCE_IGNORE_FILES
+   "${PROJECT_SOURCE_DIR}/(distrib|.*-distrib|.*-installer|geodesic-papers)/"
+   "${PROJECT_SOURCE_DIR}/[^/]*\\\\.(xml|html|css|kmz|pdf)\$"
+   "${PROJECT_SOURCE_DIR}/(autogen|biblio)\\\\.sh\$"
+-  "${PROJECT_SOURCE_DIR}/(robots.txt|geodesic-biblio.txt|makefile-admin|[^/]*\\\\.png)\$"
+-  "${PROJECT_SOURCE_DIR}/matlab/.*blurb.txt\$")
++  "${PROJECT_SOURCE_DIR}/(robots.txt|geodesic-biblio.txt|makefile-admin|[^/]*\\\\.png)\$")
++#  "${PROJECT_SOURCE_DIR}/matlab/.*blurb.txt\$")
+ set (CPACK_SOURCE_GENERATOR TGZ)
+ 
+ set (CPACK_RESOURCE_FILE_LICENSE ${PROJECT_SOURCE_DIR}/LICENSE.txt)
+
