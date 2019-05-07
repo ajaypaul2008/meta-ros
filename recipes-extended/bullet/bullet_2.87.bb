@@ -7,6 +7,7 @@ SRC_URI[md5sum] = "7566fc00d925a742e6f7ec7ba2d352de"
 SRC_URI[sha256sum] = "438c151c48840fe3f902ec260d9496f8beb26dba4b17769a4a53212903935f95"
 
 SRC_URI += "file://0001-CMakeLists.txt-do-not-find-PythonLibs.patch"
+SRC_URI += "file://0002-Disable-compiling-demos-extras-tests.patch"
 
 S = "${WORKDIR}/bullet3-2.87"
 
